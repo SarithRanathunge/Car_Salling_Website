@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Motors | Order Now</title>
+    <link rel="icons" href="./icons/logo.png">
+    <link rel="stylesheet" href="./main css files/ordernow.css">
+</head>
+
+<body>
+    <div class="headerone" data-include="headerone.html">
+    </div>
+
+    <div class="topic">
+        <p>ORDER NOW</p>
+    </div>
+    <div class="form-details">
+        <form action="datainsert.php" name="dataForm" method="post" onsubmit="return(ordervalidation())" >
+         <p>YOUR SUPER MOTOR DETAILS</p>
+         <label for="brand">Brand</label>
+         <select name="brand" class="type" required>
+            <option value="empty">Select your brand(required)*</option>
+            <option value="Bugatti">Bugatti</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Rolls-Royce">Rolls Royce</option>
+            <option value="Mclaren">Mclaren</option>
+         </select>
+         <label for="type">Type</label>
+         <select name="type" class="type" required>
+            <option value="empty">Select your type(required)*</option>
+            <option value="Bugatti">Family</option>
+            <option value="Ferrari">Sport</option>
+            <option value="Lamborghini">Travel</option>
+            <option value="Mercedes-Benz">Luxury</option>
+            <option value="Rolls-Royce">Unique</option>
+         </select>
+         <label for="year">Year</label><input type="text" class="input" name="year" placeholder="The vehical manufatured year(required)*" required>
+         <label for="model">Model</label><input type="text" class="input" name="model" placeholder="Ex:Ford GT 345 Turbo(required)*" required>
+         <label for="color">Color</label>
+         <select name="color" class="type"  required>
+            <option value="empty">Select your Color(required)*</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="white">White</option>
+            <option value="gold">Gold</option>
+            <option value="skyblue">Skyblue</option>
+            <option value="chocolate-brown">Chocolate Brown</option>
+            <option value="black">Black</option>
+            <option value="other">Other</option>
+         </select><br>
+         <p>YOUR DETAILS</p>
+         <label for="firstname">First Name</label><input type="text" class="input" name="firstname" placeholder="Kasun(required)*" required>
+         <label for="lastname">Last Name</label><input type="text" class="input" name="lastname" placeholder="Perera(required)*" required>
+         <label for="email">Email</label><input type="email" class="input" name="email" placeholder="Ex.sample@gmail.com(required)*" required>
+         <label for="telephone-no1">Telephone No.1</label><input type="text" class="input" maxlength="10" placeholder="xxxxxxxxxx(required)*" name="telephoneno1" required>
+         <label for="telephone-no2">Telephone No.2</label><input type="text" class="input" maxlength="10" placeholder="xxxxxxxxxx(not-required)*" name="telephoneno2">
+         <label for="address">Address</label><input type="text" class="input" name="address" placeholder="Ex.Exit 45 Wara Street, Colombo 07, Sri Lanka.(required)*" required>
+         <label for="postal-code">Postal code</label><input type="text" class="input" name="postalcode" placeholder="Ex.001-01(required)*" required>
+         <label for="nic-no">NIC No.</label><input type="text" class="input" name="nicno" placeholder="xxx-xxx-xxxv(required)" required>
+         <label for="nic-copy">NIC Copy<input type="file" class="input" accept="image" name="niccopy" placeholder="png,jpg(required)*" accept="image" required>
+         <input type="checkbox" name="accept" value="accept" required><label for="accept">I accept all my details are true and I will bala bala bala.....</label><br><br>
+         <a href="payment.html" target="_blank"><input type="submit" value="Go" id="submit" name="submit" class="button"></a>
+        </form>
+    </div>
+    
+    <script src="./header and footer js/headerone.js"></script>
+    <script src="./header and footer js/order&payment.js"></script>
+</body>
+</html>

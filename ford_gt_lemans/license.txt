@@ -1,0 +1,11 @@
+Model Information:
+* title:	2017 Ford GT Le Mans
+* source:	https://sketchfab.com/3d-models/2017-ford-gt-le-mans-57d59b5e6b254c22b645c4a3951a0c38
+* author:	No Limits (https://sketchfab.com/nolimitsofficial)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2017 Ford GT Le Mans" (https://sketchfab.com/3d-models/2017-ford-gt-le-mans-57d59b5e6b254c22b645c4a3951a0c38) by No Limits (https://sketchfab.com/nolimitsofficial) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

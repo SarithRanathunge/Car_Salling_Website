@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Motors | Payment</title>
+    <link rel="icons" href="./icons/logo.png">
+    <link rel="stylesheet" href="./main css files/payment.css">
+</head>
+
+<body>
+    <div class="headerone" data-include="headerone.html">
+    </div>
+    <div class="topic">
+        <p>PAYMENT METHOD</p>
+    </div>
+    <div class="form">
+        <div class="payment-form">
+            <div class="description">
+                <p>Super Motors take <span>US 50,000</span> for conform your order and specialy want
+                    to say <span>this payment will substract from your full payment</span>.
+                    Choose your best payment method. Thank you!
+                </p>
+            </div>
+            <div class="other-details">
+                <div class="payment-method">
+                    <img src="./icons/credit card icon.png" alt="icons">
+                    <img src="./icons/paypal icon.png" alt="icons">
+                    <img src="./icons/bitcoin icon.png" alt="icons">
+                </div>
+                <div class="main-details">
+                    <form action="payment.php" name="paymentForm" id="myForm" onsubmit="return(datastore())" method="post">
+                        <table>
+                            <tr>
+                                <td><label class="label">Full name</label></td>
+                                <td><input class="text" type="text" name="fullname" placeholder="Ex.Saman Sumana Kurege Perera" required></td>
+                            </tr>
+                            <tr>
+                                <td><label class="label">Card Number</label></td>
+                                <td><input class="text" type="text" name="cardnumber" placeholder="Ex.0123456789" required></td>
+                            </tr>
+                            <tr>
+                                <td><label class="label">Expire date</label></td>
+                                <td><input class="text" type="date" name="expiredate" required></td>
+                            </tr>
+                            <tr>
+                                <td><label class="label">CW</label></td>
+                                <td><input class="text" type="text" name="CW" placeholder="Ex.123" required></td>
+                            </tr>
+                            <tr>
+                                <td><label class="label">City</label></td>
+                                <td><input class="text" type="text" name="city" placeholder="Ex.Colombo 07" required></td>
+                            </tr>
+                            <tr>
+                                <td><label class="label">Postal Code</label></td>
+                                <td><input class="text" type="text" name="postalcode" placeholder="Ex.011 110" required></td>
+                            </tr>
+                            <tr>
+                                <td><label class="label">Country</label></td>
+                                <td>
+                                    <select class="country" name="country" class="country" required>
+                                    <option value="empty">Select your Country</option>
+                                    <option value="America">America</option>
+                                    <option value="England">England</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Newzland">Newzland</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="India">India</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Indonisa">Indonisa</option>
+                                    <option value="Vertnaim">Vertnaim</option>
+                                    <option value="South Korea">South Korea</option>
+                                    <option value="China">China</option>
+                                </select>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input class="button" type="submit" value="Submit Payment" name="submit"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./header and footer js/headerone.js"></script>
+    <script src="./header and footer js/scriptone.js"></script>
+</body>
+</html>

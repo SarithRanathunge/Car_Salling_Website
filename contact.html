@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main css files/style.css">
+    <link rel="stylesheet" href="./main css files/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Super Motors</title>
+</head>
+<body>
+    <div class="header" data-include="header.html">
+        
+    </div>
+    <div class="mainpage">
+        <div class="empty"></div>
+
+        <!-- map -->
+        <div class="page11">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8687422891703!2d79.8708267!3d6.906295200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597908e10713%3A0x5094ec60f1e2649e!2sNational%20Institute%20of%20Business%20Management!5e0!3m2!1sen!2slk!4v1693537947437!5m2!1sen!2slk"
+            width="1510" height="610" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>  
+        </div> 
+
+        <!-- New Features -->
+        <div class="page21">
+            <div class="page2-maindetails">
+                <div class="page2-topic">
+                    <p>CONTACT INFO</p>
+                </div>
+                <div class="page2-number">
+                    <img src="./icons/phone.png" alt="red color telephone icon">
+                    <p>+94 123456789</p>
+                </div>
+                <div class="page2-trollfree">
+                    <img src="./icons/toll_free.png" alt="red color trollfree icon">
+                    <p>800 SUPER (31773)</p>
+                </div>
+                <div class="page2-email">
+                    <img src="./icons/email.png" alt="red color email icon">
+                    <p>INFO@SUPERMOTORS.COM</p>
+                </div>
+                <div class="page2-location">
+                    <img src="./icons/location.png" alt="red color location icon">
+                    <p>EXIT 45 WARA STREET, COLOMBO 07, SRI LANKA.</p>
+                </div>
+            </div>
+            <div class="page2-sendingmessage">
+                <div class="page22-topic">
+                    <p>GET IN TOUCH</p>
+                </div>
+                <form id="submit-form"  action="https://formsubmit.com/rsarith87@gmail.com"  method="post">
+                    <input class="text" type="text" placeholder="First name(Required) *" id="firstname" name="firstname" required/>
+                    <input class="text" type="text" placeholder="Last name(Required) *" id="lastname" name="lastname" required/>
+                    <input class="text" type="email" placeholder="Email(Required) *" id="email" name="email" required/>
+                    <input class="text" type="text" placeholder="Phone(Required) *" id="phone" name="phone" required/>
+                    <textarea class="message" cols="30" rows="10"  name="message" id="message" placeholder="Message(Required) * " required></textarea>
+                    <button class="button" type="submit">SEND</button>
+                </form>
+                <!-- onsubmit="sendEmail(); reset(); return false;" -->
+            </div>
+        </div> 
+
+        <div class="footer" data-include="footer.html">
+            
+        </div>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "webcourceworkmwd@gmail.com",
+                Password : "web@cource@work#123!",
+                To : 'rsarith87@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Message From the Company Cebsite Viewer",
+                Body : "First Name:" + document.getElementById("firstname").value
+                  + "<br>Last Name:" + document.getElementById("lastname").value
+                  + "<br>Email:" + document.getElementById("email").value
+                  + "<br>Phone:" + document.getElementById("phone").value
+                  + "<br>Message:" + document.getElementById("message").value
+            }).then(
+                message => alert("Message send succussfully!")
+            );
+        }
+    </script> -->
+    <!-- <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script> -->
+    <script src="./header and footer js/script.js"></script>
+</body>
+</html>

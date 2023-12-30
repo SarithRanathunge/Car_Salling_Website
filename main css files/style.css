@@ -1,0 +1,460 @@
+:root{
+    --black-color:#000000;
+    --white-color:#ffffff;
+    --red-color:#ff0000;
+    --gray-color:rgb(229, 229, 229);
+    --dark-gray-color:rgb(219, 215, 215);
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--dark-gray-color);
+}
+
+.header{
+    width: 100%;
+    /* display: block; */
+    height: 20vh;
+    /* background-color: blue; */
+    position: fixed;
+}
+
+.header-up{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--black-color);
+    background-color: var(--white-color);
+}
+
+.media, .name, .details{
+    width: 30vw;
+    height: 12vh;
+    /* background-color: aqua; */
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.media > a > img{
+    width: 2vw;
+    height: 2vw;
+    /* background-color: blue; */
+    object-fit: contain;
+    margin: 0 1vw;
+}
+
+.name{
+    margin: 0 4vw;
+    /* background-color: aqua; */
+}
+
+.name> a >img{
+    width: 30vw;
+    height: 12vh;
+    object-fit: contain;
+}
+
+.name> a >img:hover{
+    cursor: pointer;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.details> a >img{
+    width: 2vw;
+    height: 2vw;
+    /* background-color: blue; */
+    object-fit: contain;
+    margin: 0 0.5vw;
+}
+
+.details > p{
+    font-size: 1.11vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 1vw 0 0.1vw;
+}
+
+.details> a > img:hover{
+    cursor: pointer;
+}
+
+.details> p:hover{
+    cursor: pointer;
+}
+
+.menu-bar{
+    widows: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--black-color);
+    background-color: var(--white-color);
+}
+
+.menu-button{
+    height: 6.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    background-color: var(--white-color);
+    border: 4px solid var(--white-color);
+    border-radius: 3.5px;
+    margin: 0 2.25vw ;
+}
+
+.menu-button:hover{
+    cursor: pointer;
+    border-bottom: 4px solid var(--red-color);
+    border-radius: 3.5px;
+}
+
+.mainpage{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(255, 145, 0); */
+}
+
+.page1 , .page2, .page3, .page4{
+    width: 100%;
+    height: 80vh;
+}
+
+.empty{
+    width: 100%;
+    height: 20vh;
+    /* background-color: purple; */
+}
+/*
+.page1{
+    background-color: aqua;
+}
+
+.page2{
+    background-color: rgb(48, 22, 109);
+}
+
+.page3{
+    background-color: rgb(47, 56, 56);
+}
+
+.page4{
+    background-color: rgb(190, 181, 11);
+} */
+
+.page1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: val(--white-color);
+}
+.pic{
+    width: 25%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.pic>img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.pic>img:hover{
+    width: 90%;
+    height: 70vh;
+    transition: 0.5s;
+}
+
+.page2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stocktopic,.explore-part{
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.stocktopic>p{
+    margin-top: 3vw;
+    font-size: 1.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: val(--black-color);
+    letter-spacing: 1vw;
+}
+
+.featuredstock{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.featuredstock>a{
+    width: 30%;
+    height: 55vh;
+}
+
+.vehicaldetails{
+    width: 100%;
+    height: 55vh;
+    border-radius: 10px;
+    box-shadow:0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    background-color: var(--white-color);
+}
+
+.featuredstock>a,.vehicaldetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.vehical{
+    width: 100%;
+    height: 45vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vw 0;
+}
+
+.vehical>img{
+    width: 95%;
+    height: 33vh;
+    object-fit: cover;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    transition: 1s;
+}
+
+.vehical>img:hover{
+    transform: scale(1.02);
+    transition: 1s;
+}
+
+.vehicalname, .vehicalstatus{
+    width: 97.5%;
+    height: 10vh;
+    /* background-color: aqua; */
+}
+
+.vehicalname{
+    border-bottom: 1px solid var(--black-color);
+}
+.vehicalstatus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0.2vw 0;
+}
+
+.vehicalname>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    color: black;
+}
+
+.vehicalstatus>p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--verydark-gray-color);
+    font-size: 1.35vw;
+    font-weight: 300;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    color: black;
+}
+
+.explore-part>a>input{
+    width: 300px;
+    height: 7vh;
+    color: red;
+    border-radius: 7px;
+    border:2px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+    background-color: white;
+    transition: 0.9s;
+}
+
+.explore-part>a>input:hover{
+    cursor: pointer;
+    font-size: 1.4vw;
+    color: white;
+    transition: 0.9s;
+    background-color: red;
+}
+
+.page5{
+    width: 100%;
+    height: 20vh;
+    /* background-color: rgb(51, 157, 19); */
+}
+
+.footer-up{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    /* background-color: rgb(51, 157, 19); */
+
+}
+
+.footer-up> a>img{
+    width: 4.5vw;
+    height: 4.5vw;
+    object-fit: contain;
+    margin: 0 9vw 0 9vw;
+    transition: 0.3s;
+}
+
+.footer-up> a>img:hover{
+    cursor: pointer;
+    width: 5vw;
+    height: 5vw;
+    margin: 0 10vw 0 10vw;
+    transition: 0.3s;
+}
+.footer{
+    width: 100%;
+    height: 60vh;
+    display: block;
+    background-color: var(--dark-gray-color);
+}
+
+.footer-middle{
+    width: 100%;
+    height: 55vh;
+    background-color: var(--gray-color);
+    border-bottom: 1px solid var(--black-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactdetails{
+    width: 35vw;
+    height: 15vw;
+    /* background-color: antiquewhite; */
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactdetails > .two{
+    width: 35vw;
+    height: 10vw;
+}
+
+.one{
+    width: 32vw;
+    height: 3.5vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contactdetails >.two> img{
+    width: 35vw;
+    height: 10vw;
+    object-fit: contain;
+    /* background-color: aqua; */
+}
+
+.contactdetails> .one > a >img{
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+}
+
+.contactdetails> .one > a >img:hover{
+    cursor: pointer;
+}
+
+.contactdetails>.one> p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    margin: 0 0.5vw;
+}
+
+.contactdetails>.one> p:hover{
+    cursor: pointer;
+}
+
+.showroom, .about, .contact{
+    width: 16.5vw;
+    height: 13.1vw;
+    /* background-color: antiquewhite; */
+    margin: 0 1.7vw;
+}
+
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+.sub{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+.footer-down{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-down> p{
+    font-size: 1vw;
+    margin: 1vw 0;
+}
+

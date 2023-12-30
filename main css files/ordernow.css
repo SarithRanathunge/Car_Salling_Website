@@ -1,0 +1,122 @@
+:root{
+    --black-color:#000000;
+    --white-color:#ffffff;
+    --red-color:#ff0000;
+    --gray-color:rgb(229, 229, 229);
+    --dark-gray-color:rgb(219, 215, 215);
+    --verydark-gray-color:rgb(112,112,112);
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headerone{
+    width: 100%;
+    height: 13vh;
+    background-color: var(--white-color);
+}
+
+.topic{
+    widows: 100%;
+    height: 10vh;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--black-color);
+}
+
+.topic>p{
+    font-size: 2.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.form-details{
+    width: 100%;
+    height: 230vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 50%;
+    height: 205vh;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow:0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+form>p{
+    width: 92%;
+    font-size: 1.75vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid var(--black-color);
+    margin-left: 2vw;
+}
+
+.input{
+    width: 650px;
+    height: 37px;
+}
+
+.type{
+    width: 657.5px;
+    height: 43px;
+}
+
+.input, .type{
+    font-size: 1.15vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--verydark-gray-color);
+}
+
+form>label{
+    font-size: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-top: 1.5vw;
+}
+
+form>label, .input, .type{
+    margin-left: 3.25vw;
+}
+
+form>a{
+    width: 15%;
+    height: 8vh;
+}
+
+.button{
+    width: 15%;
+    height: 8vh;
+    color: var(--red-color);
+    font-size: 1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    border-radius: 15px;
+    border: 2px solid var(--red-color);
+    transition: 0.4s;
+    margin-left: 35.5vw;
+    margin-bottom: 2vw;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    transition: 0.4s;
+}
